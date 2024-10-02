@@ -1,0 +1,17 @@
+[
+  {
+    "tiempo": "2017-2020",
+    "titulo": "Preparatoria",
+    "contenido": "Mis estudios medio superior fue en el colegio de bachilleres de tabasco plantel 8"
+  },
+  {
+    "tiempo": "2020-2021",
+    "titulo": "Aprendizaje de programación",
+    "contenido": "Durante la pandemia me dedique a empezar a estudiar algoritmos, DOM, estilos Css, Javascript, donde adquirir conocimiento valioso para empezar en el maravilloso  mundo de la Web."
+  },
+  {
+    "tiempo": "2020-2024",
+    "titulo": "TecNM de los Ríos",
+    "contenido": "Estudiante de la carrera de Ingienería en sistemas computacionales en el instituto tecnológico superior de los ríos, donde eh desempeñado proyectos Webs y aplicaciones móviles realizadas con tecnologías Web 🧑‍💻."
+  }
+]

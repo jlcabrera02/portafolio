@@ -1,0 +1,67 @@
+---
+interface Props {
+  title: string;
+}
+
+import "../global.css";
+import "../../node_modules/@flaticon/flaticon-uicons/css/all/all.css";
+
+import ItemContact from "@components/ItemContact.astro";
+import dataContacts from "@data/contacts.json";
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <!--  <link
+      rel="stylesheet"
+      href="../node_modules/@flaticon/flaticon-uicons/css/all/all.css"
+    /> -->
+  </head>
+  <body>
+    <main class="md:flex md:p-10 lg:h-screen">
+      <!-- Informacion personal -->
+      <div
+        class="mx-2 mt-3 bg-zinc-950 px-2 md:px-4 py-4 rounded md:rounded-xl overflow-auto md:min-w-[290px] md:max-w-[290px]"
+      >
+        <!-- Nombre y imagen -->
+        <div class="flex gap-2 mb-5 flex-wrap">
+          <img
+            src="/img/Perfil.webp"
+            class="w-[100px] sm:w-[200px] rounded-md aspect-square object-cover object-[75%] mx-auto"
+            alt="perfil"
+          />
+          <div class="flex flex-col justify-center items-center gap-2 mx-auto">
+            <span class="text-md font-black text-xl"
+              >Jose Luis Cabrera Aguirre</span
+            >
+            <span class="badge badge-md p-3 rounded">Web Developer</span>
+          </div>
+        </div>
+
+        <!-- Contactos -->
+        <div class="flex gap-5 flex-col">
+          {
+            dataContacts.map((c) => (
+              <ItemContact title={c.title} icon={c.icon} content={c.content} />
+            ))
+          }
+        </div>
+      </div>
+
+      <div
+        class="mx-2 mt-3 bg-zinc-950 px-2 md:px-8 pt-14 pb-4 relative rounded md:md:rounded-xl rounded-tr-xl overflow-auto grow min-w-[300px]"
+      >
+        <slot />
+      </div>
+    </main>
+  </body>
+</html>

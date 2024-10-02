@@ -1,0 +1,30 @@
+[
+  {
+    "texto": "Diseño de interfaces intuitivas y amigables con el usuario.",
+    "imagen": "./img/designweb.svg"
+  },
+  {
+    "texto": "Diseño de APIs para consumos del cliente.",
+    "imagen": "./img/backend.svg"
+  },
+  {
+    "texto": "Diseño de app moviles con tecnológias web intuitivas y amigables con el usuario.",
+    "imagen": "./img/app.svg"
+  },
+  {
+    "texto": "Diseño de base de datos relacionales y no relacionales",
+    "imagen": "./img/basededatos.svg"
+  },
+  {
+    "texto": "Asesorias sobre implementar y crear tu sitio.",
+    "imagen": "./img/asesoria.svg"
+  },
+  {
+    "texto": "Habilidad para analizar datos complejos.",
+    "imagen": "./img/analisis.svg"
+  },
+  {
+    "texto": "Apredizaje contínuo y comunicación.",
+    "imagen": "./img/conocimiento.svg"
+  }
+]

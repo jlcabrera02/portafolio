@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "fi fi-rr-envelope",
+    "title": "Email",
+    "content": "jlcabreradev@gmail.com"
+  },
+  {
+    "icon": "fi fi-rr-mobile-button",
+    "title": "Phone",
+    "content": "(+52) 934-134-31-09"
+  },
+  {
+    "icon": "fi fi-brands-github",
+    "title": "Github",
+    "content": "https://github.com/jlcabrera02"
+  }
+]

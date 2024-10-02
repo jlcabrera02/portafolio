@@ -1,0 +1,59 @@
+---
+interface Props {
+  path: String;
+}
+
+import pdf from "@assets/archivos/CV_V1.pdf";
+
+const { path } = Astro.props;
+---
+
+<!-- Menu navegador -->
+<astro-menu data-path={path}>
+  <div
+    class="bg-base-200 rounded flex justify-between absolute top-0 end-0 gap-x-5 px-4 py-2 select-none rounded-xl rounded-tl-none rounded-br-none"
+  >
+    <a
+      href="/"
+      id="about"
+      class="hover:text-primary cursor-pointer font-bold active:text-secondary"
+      >About</a
+    >
+    <a
+      href="/resume"
+      id="resume"
+      class="hover:text-primary cursor-pointer font-bold active:text-secondary"
+      >Resume</a
+    >
+    <a
+      href="/portafolio"
+      id="portafolio"
+      class="hover:text-primary cursor-pointer font-bold active:text-secondary"
+      >Portafolio</a
+    >
+    <a
+      href={pdf}
+      id="blog"
+      class="hover:text-success cursor-pointer font-bold active:text-secondary text-slate-500"
+      download=""
+    >
+      Descargar{" "}<i class="fi fi-br-person-cv"></i></a
+    >
+  </div>
+</astro-menu>
+
+<script>
+  class AstroMenu extends HTMLElement {
+    constructor() {
+      super();
+      const path = this.dataset.path;
+
+      if (path) {
+        const element = document.getElementById(path);
+        element.classList.add("text-primary");
+      }
+    }
+  }
+
+  customElements.define("astro-menu", AstroMenu);
+</script>

@@ -1,0 +1,30 @@
+[
+  {
+    "titulo": "Sistema de gestión empresarial GDL.",
+    "imagen": "./img/por_gas.webp",
+    "logo": "./img/logo_gas.webp",
+    "texto": "Este sistema se creo con la finalidad de automatizar los procesos de calidad de la empresa, esta aplicación web lo desarrolle  utilizando tecnologias fronted como: React, Bootstrap, MySQL, NodeJs, Express y JWT.",
+    "domicilio": "Tenosique, Tabasco, México"
+  },
+  {
+    "titulo": "Sistema de gestion de contenido TECNM Ríos",
+    "imagen": "./img/por_tecnm.webp",
+    "logo": "./img/logo_tecnm.webp",
+    "texto": "El sistema de gestion de contenido fue un mantenimiento mejorado con nuevas tecnologías comparado del sistema anterior del tecnológico universitario como parte del servicio de la institución.",
+    "domicilio": "Balancan, Tabasco, México"
+  },
+  {
+    "titulo": "Sistema de administración de producción de plantas",
+    "imagen": "./img/por_svsis.webp",
+    "logo": "./img/logo_sv.webp",
+    "texto": "Este sistema Web se creo con la finalidad de ayudar a los becarios sembrando vida a registrar la producción y extracción de plantas a los beneficiarios, ya que, esta información era util para los técnicos encargados",
+    "domicilio": "Balancan, Tabasco, México"
+  },
+  {
+    "titulo": "Notecam web",
+    "imagen": "./img/por_notecam.webp",
+    "logo": "./img/logo_sv.webp",
+    "texto": "Es una aplicación que ayuda a poner notas y localización a imagenes mediante la latitud y longitud sin la necesidad de estar editandola en un editor de imagen convensional.",
+    "domicilio": "Emiliano Zapata, Tabasco, México"
+  }
+]

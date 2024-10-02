@@ -1,0 +1,61 @@
+{
+  "experiecia": [
+    {
+      "tiempo": "2 años",
+      "dependencia": "Gasolineria Don Lalo",
+      "contenido": "Desarrollodor de sistema de gestion empresarial, alta de empleados, automatización de procesos, indicadores de calidad, representación visual con gráficas de información, ventas, predicción de ventas, generador de archivos."
+    },
+    {
+      "tiempo": "2 años",
+      "dependencia": "Sembrado vida",
+      "contenido": "Fui becario por parte del programa federal mexicano sembrando vida, donde cree aplicaciones para agregar notas de ubicacion y texto a fotografías, aplicación web de información de producción para becarios y algoritmos de insercion y obtencion de datos para los técnicos de sembrado vida."
+    },
+    {
+      "tiempo": "4 años",
+      "dependencia": "TecNM - Campus de los Ríos",
+      "contenido": "Por parte de servicio social de mi carrera, estuve dandole mantenimiento a la página Web de la institución."
+    }
+  ],
+  "skills": [
+    {
+      "skill": "React",
+      "cantidad": "95",
+      "color": "#1399c4"
+    },
+    {
+      "skill": "JavaScript",
+      "cantidad": "98",
+      "color": "#efd81d"
+    },
+    {
+      "skill": "TypeScript",
+      "cantidad": "90",
+      "color": "#2f74c0"
+    },
+    {
+      "skill": "NodeJs",
+      "cantidad": "90",
+      "color": "#5e9657"
+    },
+    {
+      "skill": "Git",
+      "cantidad": "90",
+      "color": "#e84e31"
+    },
+    {
+      "skill": "MySQL",
+      "cantidad": "85",
+      "color": "#005e87"
+    },
+    {
+      "skill": "CSS y frameworks",
+      "cantidad": "80",
+      "color": "#254bdd"
+    },
+    {
+      "skill": "HTML",
+      "cantidad": "99",
+      "color": "#ea5f23"
+    }
+  ]
+}

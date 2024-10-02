@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+import fortalezas from "@data/fortalezas.json";
+import Menu from "@components/Menu.astro";
+---
+
+<Layout title="Sobre mí">
+  <Menu path="about" />
+  <div>
+    <!-- Descripción principal -->
+    <div class="flex flex-col gap-2 mb-3">
+      <h1 class="font-black text-2xl">Sobre mí</h1>
+      <div class="h-[5px] w-[50px] bg-primary rounded"></div>
+    </div>
+    <!-- Contenido -->
+    <div class="mb-3">
+      <p>
+        Soy un creativo desarrollador de software, especializado en el
+        desarrollo web, con una capacidad para resolver problemas complejos que
+        he adquirido con el tiempo 🕧. Mi enfoque en la creación de soluciones
+        sofisticadas me ha permitido desarrollar aplicaciones y programas de
+        gran relevancia y valor para diferentes sectores.
+      </p>
+    </div>
+    <div class="flex flex-wrap justify-center gap-3 mb-3">
+      {
+        fortalezas.map((f) => (
+          <div class="flex gap-3 rounded bg-base-200 p-2 w-full lg:w-[250px] xl:w[400px]  items-center">
+            <img src={f.imagen} alt="webdesign" class="w-[50px]" />
+            <div>
+              <p>{f.texto}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+    <div>
+      <p>Dispuesto a ayudarte en lo que necesites. 😉</p>
+    </div>
+  </div>
+</Layout>

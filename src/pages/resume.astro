@@ -1,0 +1,104 @@
+---
+import Layout from "../layouts/Layout.astro";
+import educacion from "@data/educacion.json";
+import experiencia from "@data/experiencia.json";
+import Menu from "@components/Menu.astro";
+---
+
+<Layout title="Resumen">
+  <Menu path="resume" />
+  <div>
+    <!-- Descripción principal -->
+    <div class="flex flex-col gap-2 mb-3">
+      <h1 class="font-black text-2xl">Resumen</h1>
+      <div class="h-[5px] w-[50px] bg-primary rounded"></div>
+    </div>
+    <!-- Contenido -->
+    <div>
+      <div class="mb-5">
+        <p class="text-xl font-bold">Educación</p>
+        <ul
+          class="timeline timeline-snap-icon timeline-compact timeline-vertical"
+        >
+          {
+            educacion.map((el) => (
+              <li>
+                <div class="timeline-middle">
+                  <i class="fi fi-ss-circle-small text-primary drop-shadow-[0_0px_4px_oklch(var(--p))]" />
+                </div>
+                <div class="timeline-start mb-10">
+                  <time class="badge text-dark">{el.tiempo}</time>
+                  <div class="text-lg font-bold">{el.titulo}</div>
+                  <div>{el.contenido}</div>
+                </div>
+                <hr class="bg-primary rounded" />
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <div
+        class="md:flex w-full justify-between md:flex-row-reverse lg:gap-5 xl:gap-10"
+      >
+        <div class="mb-3">
+          <p class="text-xl font-bold mb-3">Experiencia</p>
+          <div class="max-w-min mx-auto block">
+            <div class="carousel rounded-box max-w-80 mb-2">
+              {
+                experiencia.experiecia.map((ex, idx) => (
+                  <div class="carousel-item w-full mx-2" id={`item${idx + 1}`}>
+                    <div class="bg-base-100 rounded-md">
+                      <div class="p-2">
+                        <h2 class="text-lg text-primary font-semibold">
+                          {ex.dependencia}
+                        </h2>
+                        <div class="w-full h-full flex">
+                          <p class="text-sm mx-auto">{ex.contenido}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))
+              }
+            </div>
+            <div class="max-w-80 flex justify-evenly">
+              {
+                experiencia.experiecia.map((_, idx) => (
+                  <a href={`#item${idx + 1}`} class="btn btn-xs">
+                    {idx + 1}
+                  </a>
+                ))
+              }
+            </div>
+          </div>
+        </div>
+
+        <div class="grow">
+          <p class="text-xl font-bold mb-3">Skills</p>
+          {
+            experiencia.skills.map((s) => (
+              <div class="mb-3">
+                <div>
+                  <div class="w-full bg-base-200 rounded-full h-2.5">
+                    <div
+                      class="h-2.5 rounded-full"
+                      style={`width: ${s.cantidad}%; background: ${s.color}`}
+                    />
+                  </div>
+                </div>
+                <span class="text-md font-bold">{s.skill} - </span>
+                <span
+                  class="text-md font-bold text-primary"
+                  style={`color:${s.color}`}
+                >
+                  {s.cantidad}%
+                </span>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div></Layout
+>
