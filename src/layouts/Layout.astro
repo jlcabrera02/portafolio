@@ -9,6 +9,8 @@ import "../../node_modules/@flaticon/flaticon-uicons/css/all/all.css";
 import ItemContact from "@components/ItemContact.astro";
 import dataContacts from "@data/contacts.json";
 
+const site = "https://jlcabrera.site";
+
 const { title } = Astro.props;
 ---
 
@@ -16,16 +18,28 @@ const { title } = Astro.props;
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta
+      name="description"
+      content="Hola, soy Jose Luis Ing en Sistema Computacionales, en este mí espacio, quiero compartirte lo que he hecho y lo que puedo hacer para tus futuros proyectos."
+    />
     <meta name="viewport" content="width=device-width" />
+
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="blog" />
+    <meta property="og:title" content={title} />
+    <meta
+      property="og:description"
+      content="Hola, soy Jose Luis Ing en Sistema Computacionales, en este mí espacio, quiero compartirte lo que he hecho y lo que puedo hacer para tus futuros proyectos."
+    />
+    <meta property="og:url" content={site} />
+    <meta property="og:site_name" content="jlcabrera" />
+    <meta property="og:image" content={site + "/img/Perfil.webp"} />
+    <meta property="og:image:secure_url" content={site + "/img/Perfil.webp"} />
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-    <!--  <link
-      rel="stylesheet"
-      href="../node_modules/@flaticon/flaticon-uicons/css/all/all.css"
-    /> -->
   </head>
+
   <body>
     <main class="md:flex md:p-10 lg:h-screen">
       <!-- Informacion personal -->
