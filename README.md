@@ -2,4 +2,4 @@
 
 Buscar el sitio en la pagina [Mi web](https://jlcabrera.site)
 
-![Icono_Web](https://jlcabrera/icon.svg)
+![Icono_Web](https://jlcabrera.site/icon.svg)
