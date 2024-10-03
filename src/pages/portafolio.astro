@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Menu from "@components/Menu.astro";
 import portafolio from "@data/portafolio.json";
+const sitio = "https://jlcabrera.site/";
 ---
 
 <Layout title="Portafolio">
@@ -21,14 +22,14 @@ import portafolio from "@data/portafolio.json";
                 <input type="checkbox" />
                 <div class="swap-on w-full h-full">
                   <img
-                    src={p.logo}
+                    src={sitio + p.logo}
                     alt={p.titulo}
                     class="w-full h-full object-contain rounded"
                   />
                 </div>
                 <div class="swap-off w-full h-full">
                   <img
-                    src={p.imagen}
+                    src={sitio + p.imagen}
                     alt={p.titulo}
                     class="w-full h-full object-contain rounded"
                   />
